@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./_css/style.css">
+     <link rel="icon" href="./_img/logo.png" type="image/x-icon"> 
+    <title>Música</title>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <nav class="nav container">
+        <a href="#inicio" class="logo">
+            <img src="./_img/logo.png" alt="Logo" class="logo-img" />
+            <span class="logo-text">SAY NO MORE</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menú de navegación" onclick="toggleMenu()">
+            ☰
+        </button>
+        
+        <ul class="nav-menu">
+            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="#music-genres" class="nav-link">Estilos Musicales</a></li>
+            <li><a href="#albums" class="nav-link">Álbumes Importantes</a></li>
+            <li><a href="#emotions" class="nav-link">Emociones</a></li>
+            <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+ <!-- Sección Hero -->
+<section class="hero">
+    <div class="container">
+        <h1 class="hero_title">Bienvenido a <span class="hero__highlight">Mi Página</span></h1>
+        <p class="hero__description">Descubre contenido increíble sobre emociones, música y más.</p>
+        <div class="hero__actions">
+            <a href="#emotions" class="btn btn--primary">Explorar Emociones</a>
+            <a href="#music-genres" class="btn btn--secondary">Ver Galería</a>
+        </div>
+    </div>
+</section>
+<!-- Sección de Estilos Musicales -->
+<section id="music-genres" class="music-section custom-genres">
+    <h2 class="genre-title"> Estilos Musicales</h2>
+    <p class="genre-intro">
+     La música de cada género tiene una forma única de tocar nuestras emociones. Cada estilo, con su ritmo y armonía, nos conecta de manera diferente, despertando en nosotros sentimientos que a veces ni sabíamos que existían. Algunos generos Son:
+    </p>
+    <div class="music-grid">
+        <div class="music-item">
+            <img 
+                src="./assets/rock-image.jpg" 
+                srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqaBuhryewzRypDD54rMcw74jWnH6BNAzNA&s"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                alt="Estilo Musical Rock"
+                data-description="El poder de la guitarra y la energía cruda."
+            >
+            <div class="overlay-info">
+                <h4>Rock</h4>
+                <p>Una explosión de energía, ideal para liberar tensiones.</p>
+            </div>
+        </div>
+
+        <div class="music-item">
+            <img 
+                src="./assets/jazz-image.jpg" 
+                srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOlBZI9LNW0wY6U36fqr_RR897c_OY45YKwQ&s"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                alt="Estilo Musical Jazz"
+                data-description="Ritmos suaves y sofisticados."
+            >
+            <div class="overlay-info">
+                <h4>Jazz</h4>
+                <p>Ideal para crear una atmósfera tranquila y profunda.</p>
+            </div>
+        </div>
+
+        <div class="music-item">
+            <img 
+                src="./assets/classical-music.jpg" 
+                srcset="https://formacioncatolica.org/wp-content/uploads/Articulo-Musica-Clasica-Cuarteto-1-768x494.jpg.webp"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                alt="Estilo Musical Clásica"
+                data-description="Elegancia y perfección en cada nota."
+            >
+            <div class="overlay-info">
+                <h4>Música Clásica</h4>
+                <p>Un viaje sonoro que eleva el espíritu.</p>
+            </div>
+        </div>
+
+        <div class="music-item">
+            <img 
+                src="./assets/reggaeton-music.jpg" 
+                srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-xcd1z85B0h25OJpP9znx88WBaB52oUgflw&s"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                alt="Estilo Musical Reggaetón"
+                data-description="Ritmos urbanos que invitan al movimiento."
+            >
+            <div class="overlay-info">
+                <h4>Reggaetón</h4>
+                <p>Un género vibrante para una noche llena de baile.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Parrafo -->
+<div class="parrafo">
+    <div class="text">
+      <p>La música es ese lenguaje universal que logra comunicar lo que a veces ni las palabras pueden expresar. A través de sus acordes, ritmos y melodías, nos invita a sentir profundamente, a conectar con nuestras emociones más sinceras y a entendernos a nosotros mismos sin necesidad de decir una sola palabra. Cada nota parece llevar consigo una historia, un sentimiento oculto, una emoción que se hace tangible. Es la forma más pura de expresión humana, capaz de atravesar fronteras y conectar corazones, recordándonos que la música tiene el poder de hacernos sentir más vivos, más humanos.</p>
+    </div>
+    <div class="image">
+      <img src="./_img/musica.jpg" alt="Imagen relacionada con la música">
+    </div>
+  </div>
+    
+<!-- Sección de ÁLBUMES IMPORTANTES -->
+<section id="albums" class="products-section">
+    <h2 class="genre-title">Álbumes Importantes</h2>
+    <div class="album-grid">
+       <!-- "Clics Modernos" de Charly García -->
+  <article class="album-card">
+    <div class="album-image-container">
+      <img src="./_img/clicks.jpeg" alt="Portada de Clics Modernos de Charly García" loading="lazy">
+      <span class="album-badge">Clásico</span>
+    </div>
+    <div class="album-content">
+      <h3 class="album-title">Clics Modernos</h3>
+      <p class="album-description">
+        Un álbum icónico de Charly García, lanzado en 1983, que marcó un antes y un después en el rock argentino. Reconocido por su sonido vanguardista, letras provocadoras y la exploración de temas como la modernidad, la transición democrática en Argentina y la identidad.
+      </p>
+      <div class="album-actions">
+        <button class="btn btn-primary" onclick="window.open('https://www.youtube.com/watch?v=f_A_wgu5YD4', '_blank')">Escuchar Álbum</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- "Artaud" de Luis Alberto Spinetta -->
+  <article class="album-card">
+    <div class="album-image-container">
+      <img src="./_img/artaud.jpeg" alt="Portada de Artaud de Luis Alberto Spinetta" loading="lazy">
+      <span class="album-badge">Ícono</span>
+    </div>
+    <div class="album-content">
+      <h3 class="album-title">Artaud</h3>
+      <p class="album-description">
+        "Artaud" de Pescado Rabioso, lanzado en 1973, es considerado una obra maestra del rock argentino y una de las creaciones más influyentes de Luis Alberto Spinetta. El álbum, aunque acreditado a Pescado Rabioso, es esencialmente un trabajo solista de Spinetta, influenciado por la vida y obra del poeta francés Antonin Artaud.
+      </p>
+      <div class="album-actions">
+        <button class="btn btn-primary" onclick="window.open('https://youtu.be/LXYZQTt-Kuo', '_blank')">Escuchar</button>
+      </div>
+    </div>
+  </article>
+
+  <!--  "Porfiado" de El Cuarteto de Nos -->
+<article class="album-card">
+  <div class="album-image-container">
+    <picture>
+      <img src="./_img/cuarteto.jpeg" alt="Portada de Porfiado de El Cuarteto de Nos, con una imagen de la banda" loading="lazy">
+    </picture>
+    <span class="album-badge">Rock Uruguayo</span>
+  </div>
+  <div class="album-content">
+    <h3 class="album-title">Porfiado</h3>
+    <p class="album-description">
+      "Porfiado" es el decimotercer álbum de estudio de la banda uruguaya El Cuarteto de Nos, lanzado en 2012. El álbum, que consta de 12 canciones, se caracteriza por su diversidad musical, letras ingeniosas y una identidad muy marcada, lo que llevó a que la revista Rolling Stone no pudiera definirlo como un disco de un género específico.
+    </p>
+    <div class="album-actions">
+      <button class="btn btn-primary" onclick="window.open('https://youtu.be/7Yqrw1iwre8', '_blank')">Escuchar</button>
+    </div>
+  </div>
+</article>
+
+  <!--"Abbey Road" de Los Beatles -->
+  <article class="album-card">
+    <div class="album-image-container">
+      <img src="./_img/beatles.jpeg" alt="Portada de Abbey Road de Los Beatles" loading="lazy">
+      <span class="album-badge">Legendario</span>
+    </div>
+    <div class="album-content">
+      <h3 class="album-title">Abbey Road</h3>
+      <p class="album-description">
+        "Abbey Road" es el undécimo álbum de estudio de The Beatles, lanzado en 1969. Es reconocido por su portada icónica, donde los cuatro miembros cruzan un paso de peatones en Abbey Road, y por su combinación de rock, blues, pop y rock progresivo. Fue el último álbum grabado por la banda, aunque "Let It Be" fue lanzado después.
+      </p>
+      <div class="album-actions">
+        <button class="btn btn-primary" onclick="window.open('https://www.youtube.com/watch?v=SQgDYT836Kk', '_blank')">Escuchar Álbum</button>
+      </div>
+    </div>
+  </article>
+ </div>
+</div>
+
+<!-- Sección de Estadisticas -->
+<main class="music-stats">
+    <section class="music-stat-section">
+        <div class="section-header">
+            <h2 class="genre-title"> Estadísticas Musicales - Jazz y Más</h2>
+            <p class="section-description">Análisis de los géneros más influyentes y populares en la escena musical actual.</p>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card top-track">
+                <h3 class="stat-title">Track más Popular</h3>
+                <div class="stat-value">Take Five</div>
+                <p class="stat-details">Interpretado por Dave Brubeck. 1,200,000 streams esta semana.</p>
+            </div>
+            <div class="stat-card top-genre">
+                <h3 class="stat-title">Género Más Escuchado</h3>
+                <div class="stat-value">Jazz</div>
+                <p class="stat-details">El jazz ha experimentado un auge del 15% en popularidad este año, con más oyentes nuevos.</p>
+            </div>
+            <div class="stat-card most-streamed-artist">
+                <h3 class="stat-title">Artista Más Escuchado</h3>
+                <div class="stat-value">Kamasi Washington</div>
+                <p class="stat-details">Kamasi se ha convertido en el referente más destacado de la nueva ola del jazz moderno.</p>
+            </div>
+            <div class="stat-card top-album">
+                <h3 class="stat-title">Álbum Más Popular</h3>
+                <div class="stat-value">The Epic</div>
+                <p class="stat-details">Kamasi Washington lidera las listas con más de 5 millones de copias vendidas, una obra maestra del jazz contemporáneo.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Sección de Emociones -->
+<section id="emotions" class="section emotions">
+    <div class="container">
+         <h2 class="genre-title">Cómo la Música Nos Hace Sentir</h2>
+        <div class="emotion-card">
+            <h3 class="emotion-title">Felicidad</h3>
+            <p class="emotion-description">Las melodías alegres, con tempos rápidos y tonos brillantes, nos transmiten sensaciones de alegría y energía.</p>
+        </div>
+        <div class="emotion-card">
+            <h3 class="emotion-title">Tristeza</h3>
+            <p class="emotion-description">Los acordes menores y las canciones lentas evocan sentimientos de melancolía y reflexión.</p>
+        </div>
+        <div class="emotion-card">
+            <h3 class="emotion-title">Energía</h3>
+            <p class="emotion-description">La música enérgica, como el rock o la electrónica, nos impulsa a movernos y a sentirnos vivos.</p>
+        </div>
+    </div>
+</section>
+    
+<!-- Footer -->
+<footer id="contact" class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <h2 class="footer__title">¡Hablemos!</h2>
+            <p class="footer__description">
+                ¿Tienes alguna idea o proyecto en mente? No dudes en contactarme
+            </p>
+            <div class="footer__contact">
+                <a href="mailto:Carola_ruizc@soy.sena.edu.co" class="contact-link">Envíame un correo</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.toggle('active');
+}
+</script>
+</body>
+</html>
